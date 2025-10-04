@@ -92,6 +92,7 @@ public class Main {
         if (!found2){
             System.out.println("The number you entered is not found");
         }
+        input.close();
 
     }
 }
