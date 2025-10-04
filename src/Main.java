@@ -22,19 +22,6 @@ public class Main {
         System.out.println(Arrays.toString(numbers));*/
 
         // task three
-        int minIndex = 0; //initializing the lowest value's index
-        int temp; // creating a temporary placeholder
-        // using nested for loop to rearrange the array element accordingly
-        for (int i = 0; i<numbers.length; i++){
-            for (int k = i; k<numbers.length; k++){
-                if (numbers[k]<numbers[minIndex]){
-                    minIndex = k;
-                }
-
-            }
-            temp = numbers[i];
-            numbers[i] = numbers[minIndex];
-            numbers[minIndex] = temp;
         }
 
         for(int i = 0; i<numbers.length-1; i++){
@@ -90,7 +77,6 @@ public class Main {
         int numToSearch = input.nextInt();
         Arrays.sort(numbers);
         boolean found2 = false;
-        int indexi = 0;
         int lowNumber = 0;
         int highNumber = numbers.length - 1;
 
@@ -98,7 +84,7 @@ public class Main {
             int mid = (lowNumber + highNumber) / 2;
             if(numbers[mid] == numToSearch){
                 found2 = true;
-                System.out.println("Your number " +numToSearch + " is found at index " + indexi);
+                System.out.println("Your number " +numToSearch + " is found at index " + mid);
                 break;
             }else if(numbers[mid] < numToSearch){
                 lowNumber = mid+1;
