@@ -1,8 +1,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
@@ -14,15 +12,14 @@ public class Main {
             value = numbers[i];
             System.out.println(i+ " : "+value);
         }
-        //
+        
         //Task two
         int placeholder = numbers[0];
         numbers[0] = numbers[numbers.length-1];
         numbers[numbers.length-1] = placeholder;
-        System.out.println(Arrays.toString(numbers));*/
+        System.out.println(Arrays.toString(numbers));
 
         // task three
-        }
 
         for(int i = 0; i<numbers.length-1; i++){
             int min = i;
